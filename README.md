@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Currículo Profissional - Lucas Somokovitz
 
-## Getting Started
+## 🎯 Sobre o Projeto
 
-First, run the development server:
+Currículo profissional moderno e responsivo desenvolvido com **Next.js**, **TypeScript** e **Tailwind CSS**. O projeto apresenta uma interface elegante e otimizada para exibição de informações profissionais.
 
+## ✨ Características
+
+- **Design Responsivo**: Adaptável a todos os dispositivos
+- **Performance Otimizada**: Carregamento rápido e animações suaves
+- **Dados Centralizados**: Informações organizadas em TypeScript
+- **Componentes Modulares**: Arquitetura limpa e reutilizável
+- **SEO Friendly**: Otimizado para mecanismos de busca
+
+## 🚀 Tecnologias Utilizadas
+
+- **Next.js 14**: Framework React para produção
+- **TypeScript**: Tipagem estática para JavaScript
+- **Tailwind CSS**: Framework CSS utility-first
+- **React 18**: Biblioteca para interfaces de usuário
+- **Git**: Controle de versão
+
+## 📋 Seções do Currículo
+
+- **Header**: Informações pessoais e contato
+- **Resumo Profissional**: Apresentação e experiência
+- **Experiência**: Histórico profissional detalhado
+- **Habilidades**: Competências técnicas organizadas por categoria
+- **Certificações**: Cursos e certificações
+- **Projetos**: Portfólio de trabalhos relevantes
+- **Informações Adicionais**: Dados complementares
+
+## 🛠️ Como Executar
+
+### Pré-requisitos
+- Node.js 18+ 
+- npm ou yarn
+
+### Instalação
 ```bash
+# Clone o repositório
+git clone https://github.com/LucasSomokovitz/curriculo-profissional.git
+
+# Entre no diretório
+cd curriculo-profissional
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Acesso
+Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+curriculo-site/
+├── src/
+│   ├── app/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── Header.tsx
+│   │   ├── Summary.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Skills.tsx
+│   │   ├── Certifications.tsx
+│   │   ├── Projects.tsx
+│   │   ├── AdditionalInfo.tsx
+│   │   └── AnimatedSection.tsx
+│   └── data/
+│       └── cv-data.ts
+├── public/
+└── package.json
+```
 
-## Learn More
+## 🎨 Personalização
 
-To learn more about Next.js, take a look at the following resources:
+### Atualizando Dados
+Edite o arquivo `src/data/cv-data.ts` para modificar as informações do currículo:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```typescript
+export const cvData: CVData = {
+  personalInfo: {
+    name: "Seu Nome",
+    email: "seu@email.com",
+    // ... outros dados
+  },
+  // ... outras seções
+};
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Modificando Estilos
+Os estilos podem ser personalizados em:
+- `src/app/globals.css` - Estilos globais
+- Componentes individuais - Classes Tailwind CSS
 
-## Deploy on Vercel
+## 🚀 Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Vercel (Recomendado)
+1. Conecte seu repositório GitHub à Vercel
+2. Configure as variáveis de ambiente se necessário
+3. Deploy automático a cada push
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Netlify
+1. Build: `npm run build`
+2. Publish directory: `out`
+3. Deploy automático via GitHub
+
+## 📱 Responsividade
+
+- **Mobile**: Layout otimizado para smartphones
+- **Tablet**: Adaptação para tablets
+- **Desktop**: Experiência completa em telas grandes
+
+## 🔧 Scripts Disponíveis
+
+```bash
+npm run dev      # Desenvolvimento
+npm run build    # Build de produção
+npm run start    # Servidor de produção
+npm run lint     # Verificação de código
+```
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+**Lucas Somokovitz**
+- LinkedIn: [lucas-somokovitz](https://www.linkedin.com/in/lucas-somokovitz/)
+- Instagram: [@lucas_narciso_ia](https://www.instagram.com/lucas_narciso_ia/)
+- GitHub: [LucasSomokovitz](https://github.com/LucasSomokovitz/)
+
+---
+
+⭐ **Se este projeto foi útil, considere dar uma estrela!**
