@@ -152,3 +152,4 @@ Para dúvidas sobre o projeto ou currículo:
 ---
 
 *Currículo criado com Next.js, TypeScript e Tailwind CSS*
+

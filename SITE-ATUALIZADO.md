@@ -106,3 +106,4 @@ npm run start
 ---
 
 *Site atualizado com sucesso em 28/09/2025*
+
